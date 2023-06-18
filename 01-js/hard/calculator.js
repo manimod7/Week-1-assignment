@@ -22,31 +22,31 @@ class Calculator {
     this.result = 0;
   }
 
-  add(num) {
-    this.result += num;
-  }
-  subtract(num) {
-    this.result -= num;
-  }
-  multiply(num) {
-    this.result *= num;
-  }
-  divide(num) {
-    if (num === 0) throw new Error("NaN");
-    this.result /= num;
-  }
-  clear() {
-    this.result = 0;
-  }
-  getResult() {
-    return this.result;
-  }
+  // add(num) {
+  //   this.result += num;
+  // }
+  // subtract(num) {
+  //   this.result -= num;
+  // }
+  // multiply(num) {
+  //   this.result *= num;
+  // }
+  // divide(num) {
+  //   if (num === 0) throw new Error("NaN");
+  //   this.result /= num;
+  // }
+  // clear() {
+  //   this.result = 0;
+  // }
+  // getResult() {
+  //   return this.result;
+  // }
   calculate(str) {
     this.result = eval(str);
     return this.result;
   }
 }
-//calculator = new Calculator();
+calculator = new Calculator();
 
-//console.log(calculator.calculate("1+2*(3-4)/(12+1)*-40"))
+console.log(calculator.calculate("1+2*(3-4)/(12+1)*-40"))
 module.exports = Calculator;
